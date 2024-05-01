@@ -109,11 +109,11 @@ server <- function(input, output, session) {
     # Connect to the database
     con <- dbConnect(
       RPostgres::Postgres(),
-      dbname = "alumini",
-      host = "localhost",
+      dbname = "alumni",
+      host = "ep-falling-silence-a4xfratq.us-east-1.aws.neon.tech",
       port = 5432,
-      user = "postgres",
-      password = "123"
+      user = "default",
+      password = "cjQZyYWCx2p8"
     )
     
     # Query to retrieve alumni names
@@ -136,11 +136,11 @@ server <- function(input, output, session) {
     # Connect to the database
     con <- dbConnect(
       RPostgres::Postgres(),
-      dbname = "alumini",
-      host = "localhost",
+      dbname = "alumni",
+      host = "ep-falling-silence-a4xfratq.us-east-1.aws.neon.tech",
       port = 5432,
-      user = "postgres",
-      password = "123"
+      user = "default",
+      password = "cjQZyYWCx2p8"
     )
     
     # Query to retrieve alumni names
@@ -163,11 +163,11 @@ server <- function(input, output, session) {
     # Connect to the database
     con <- dbConnect(
       RPostgres::Postgres(),
-      dbname = "alumini",
-      host = "localhost",
+      dbname = "alumni",
+      host = "ep-falling-silence-a4xfratq.us-east-1.aws.neon.tech",
       port = 5432,
-      user = "postgres",
-      password = "123"
+      user = "default",
+      password = "cjQZyYWCx2p8"
     )
     
     # Query to retrieve alumni names
@@ -211,7 +211,7 @@ server <- function(input, output, session) {
   observeEvent(input$submit_login, {
     # Connect to the database
     
-    con <- dbConnect(RPostgres::Postgres(), dbname = "alumini", host = "localhost", port = 5432, user = "postgres", password = "123")
+    con <- dbConnect(RPostgres::Postgres(), dbname = "alumni", host = "ep-falling-silence-a4xfratq.us-east-1.aws.neon.tech", port = 5432, user = "default", password = "cjQZyYWCx2p8")
     print(con)
     # Construct the SQL query to check user credentials and retrieve role
     qry <- paste0("SELECT role FROM Users WHERE username = '", input$username, "' AND password = '", input$password, "'")
@@ -325,11 +325,11 @@ server <- function(input, output, session) {
     # Connect to the database
     con <- dbConnect(
       RPostgres::Postgres(),
-      dbname = "alumini",
-      host = "localhost",
+      dbname = "alumni",
+      host = "ep-falling-silence-a4xfratq.us-east-1.aws.neon.tech",
       port = 5432,
-      user = "postgres",
-      password = "123"
+      user = "default",
+      password = "cjQZyYWCx2p8"
     )
     
     selected_name <- selected_alumni()
@@ -454,11 +454,11 @@ server <- function(input, output, session) {
   # Connect to PostgreSQL database
   con <- dbConnect(
     RPostgres::Postgres(),
-    dbname = "alumini",
-    host = "localhost",
+    dbname = "alumni",
+    host = "ep-falling-silence-a4xfratq.us-east-1.aws.neon.tech",
     port = 5432,
-    user = "postgres",
-    password = "123"
+    user = "default",
+    password = "cjQZyYWCx2p8"
   )
   
   # Disconnect from database on session end
